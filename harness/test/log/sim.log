@@ -1,0 +1,56 @@
+VCD info: dumpfile harness/test/log/axi4_top_tb_golden.vcd opened for output.
+VCD warning: ignoring signals in previously scanned scope axi4_top_tb_golden.dut.
+========================================
+Waveform file: harness/test/log/axi4_top_tb_golden.vcd
+========================================
+========================================
+Simulation Log Started
+Time: 0
+========================================
+========================================
+AXI4 Top Module Testbench - Starting
+========================================
+
+Test 1: Reset Check
+  PASS: System reset completed
+
+Test 2: System Initialization
+  PASS: System initialized
+
+Test 3: Integration Check
+  PASS: Integration check completed
+
+========================================
+All tests completed successfully!
+========================================
+
+Test Summary:
+  ✓ Test 1: Reset Check - PASSED
+  ✓ Test 2: System Initialization - PASSED
+  ✓ Test 3: Integration Check - PASSED
+
+Assertion Summary:
+  ✓ Reset Behavior Assertion - TRIGGERED
+  ✓ System Integrity Assertion - TRIGGERED
+
+Note: Full integration testing requires access to
+internal AXI4 signals between master and slave.
+This testbench provides basic system-level validation.
+========================================
+========================================
+Simulation Completed
+Final Time: 485
+Waveform: harness/test/log/axi4_top_tb_golden.vcd
+========================================
+
+=== COVERAGE REPORT ===
+Test Coverage:
+  Test 1 (Reset Check):         1
+  Test 2 (System Init):          1
+  Test 3 (Integration Check):    1
+
+Assertion Coverage:
+  Reset Behavior Assertion:     1
+  System Integrity Assertion:   1
+
+Coverage Summary:

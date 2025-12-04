@@ -1,0 +1,484 @@
+$date
+	Wed Dec  3 20:56:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module axi4_top_tb_golden $end
+$var reg 1 ! assertion_reset_behavior $end
+$var reg 1 " assertion_system_integrity $end
+$var reg 1 # clk $end
+$var reg 32 $ cycle_count [31:0] $end
+$var reg 1 % resetn $end
+$var reg 1 & test1_reset_check $end
+$var reg 1 ' test2_system_initialization $end
+$var reg 1 ( test3_integration_check $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 1 % resetn $end
+$var wire 1 ) interrupt_ack $end
+$var wire 1 * axi_wvalid $end
+$var wire 4 + axi_wstrb [3:0] $end
+$var wire 1 , axi_wready $end
+$var wire 1 - axi_wlast $end
+$var wire 32 . axi_wdata [31:0] $end
+$var wire 1 / axi_rvalid $end
+$var wire 2 0 axi_rresp [1:0] $end
+$var wire 1 1 axi_rready $end
+$var wire 1 2 axi_rlast $end
+$var wire 32 3 axi_rdata [31:0] $end
+$var wire 1 4 axi_bvalid $end
+$var wire 2 5 axi_bresp [1:0] $end
+$var wire 1 6 axi_bready $end
+$var wire 1 7 axi_awvalid $end
+$var wire 3 8 axi_awsize [2:0] $end
+$var wire 1 9 axi_awready $end
+$var wire 8 : axi_awlen [7:0] $end
+$var wire 2 ; axi_awburst [1:0] $end
+$var wire 32 < axi_awaddr [31:0] $end
+$var wire 1 = axi_arvalid $end
+$var wire 3 > axi_arsize [2:0] $end
+$var wire 1 ? axi_arready $end
+$var wire 8 @ axi_arlen [7:0] $end
+$var wire 2 A axi_arburst [1:0] $end
+$var wire 32 B axi_araddr [31:0] $end
+$var reg 1 C interrupt_req $end
+$scope module interrupt_ctrl $end
+$var wire 1 # clk $end
+$var wire 1 C interrupt_req $end
+$var wire 1 % resetn $end
+$var reg 1 ) interrupt_ack $end
+$upscope $end
+$scope module master $end
+$var wire 1 # clk $end
+$var wire 1 % resetn $end
+$var wire 1 , axi_wready $end
+$var wire 1 / axi_rvalid $end
+$var wire 2 D axi_rresp [1:0] $end
+$var wire 1 2 axi_rlast $end
+$var wire 32 E axi_rdata [31:0] $end
+$var wire 1 4 axi_bvalid $end
+$var wire 2 F axi_bresp [1:0] $end
+$var wire 1 9 axi_awready $end
+$var wire 1 ? axi_arready $end
+$var reg 32 G axi_araddr [31:0] $end
+$var reg 2 H axi_arburst [1:0] $end
+$var reg 8 I axi_arlen [7:0] $end
+$var reg 3 J axi_arsize [2:0] $end
+$var reg 1 = axi_arvalid $end
+$var reg 32 K axi_awaddr [31:0] $end
+$var reg 2 L axi_awburst [1:0] $end
+$var reg 8 M axi_awlen [7:0] $end
+$var reg 3 N axi_awsize [2:0] $end
+$var reg 1 7 axi_awvalid $end
+$var reg 1 6 axi_bready $end
+$var reg 1 1 axi_rready $end
+$var reg 32 O axi_wdata [31:0] $end
+$var reg 1 - axi_wlast $end
+$var reg 4 P axi_wstrb [3:0] $end
+$var reg 1 * axi_wvalid $end
+$upscope $end
+$scope module slave $end
+$var wire 32 Q axi_araddr [31:0] $end
+$var wire 2 R axi_arburst [1:0] $end
+$var wire 8 S axi_arlen [7:0] $end
+$var wire 3 T axi_arsize [2:0] $end
+$var wire 1 = axi_arvalid $end
+$var wire 32 U axi_awaddr [31:0] $end
+$var wire 2 V axi_awburst [1:0] $end
+$var wire 8 W axi_awlen [7:0] $end
+$var wire 3 X axi_awsize [2:0] $end
+$var wire 1 7 axi_awvalid $end
+$var wire 1 6 axi_bready $end
+$var wire 1 1 axi_rready $end
+$var wire 32 Y axi_wdata [31:0] $end
+$var wire 1 - axi_wlast $end
+$var wire 4 Z axi_wstrb [3:0] $end
+$var wire 1 * axi_wvalid $end
+$var wire 1 # clk $end
+$var wire 1 % resetn $end
+$var reg 1 ? axi_arready $end
+$var reg 1 9 axi_awready $end
+$var reg 2 [ axi_bresp [1:0] $end
+$var reg 1 4 axi_bvalid $end
+$var reg 32 \ axi_rdata [31:0] $end
+$var reg 1 2 axi_rlast $end
+$var reg 2 ] axi_rresp [1:0] $end
+$var reg 1 / axi_rvalid $end
+$var reg 1 , axi_wready $end
+$var reg 32 ^ write_addr [31:0] $end
+$var reg 1 _ write_addr_accepted $end
+$var reg 2 ` write_burst [1:0] $end
+$var reg 8 a write_count [7:0] $end
+$var reg 1 b write_data_accepted $end
+$var reg 1 c write_in_progress $end
+$var reg 8 d write_len [7:0] $end
+$var reg 1 e write_response_pending $end
+$var reg 1 f write_response_ready $end
+$var reg 3 g write_size [2:0] $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 h i [31:0] $end
+$upscope $end
+$scope begin $unm_blk_13 $end
+$var reg 32 i addr_offset [31:0] $end
+$var reg 32 j byte_size [31:0] $end
+$var reg 32 k current_addr [31:0] $end
+$scope begin $unm_blk_14 $end
+$var reg 32 l aligned_addr [31:0] $end
+$var reg 32 m wrap_boundary [31:0] $end
+$upscope $end
+$scope begin $unm_blk_15 $end
+$var reg 32 n mem_addr [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin $unm_blk_34 $end
+$var reg 32 o read_addr [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin $unm_blk_57 $end
+$var integer 32 p assertions_triggered [31:0] $end
+$var integer 32 q tests_executed [31:0] $end
+$upscope $end
+$upscope $end
+$scope module axi4_top_tb_golden $end
+$scope module dut $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx q
+bx p
+bx o
+bx n
+bx m
+bx l
+bx k
+bx j
+bx i
+b100000000 h
+b0 g
+0f
+0e
+b0 d
+0c
+0b
+b0 a
+b0 `
+0_
+b0 ^
+b0 ]
+b0 \
+b0 [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+b0 F
+b0 E
+b0 D
+xC
+bx B
+bx A
+bx @
+1?
+bx >
+0=
+bx <
+bx ;
+bx :
+09
+bx 8
+07
+06
+b0 5
+04
+b0 3
+02
+01
+b0 0
+0/
+bx .
+x-
+0,
+bx +
+0*
+0)
+0(
+0'
+0&
+0%
+b0 $
+0#
+0"
+0!
+$end
+#5
+1!
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+1%
+#25
+x)
+19
+b1 $
+1#
+#30
+0#
+1&
+#35
+1"
+b10 $
+1#
+#40
+0#
+#45
+b11 $
+1#
+#50
+0#
+#55
+b100 $
+1#
+#60
+0#
+1'
+#65
+b101 $
+1#
+#70
+0#
+#75
+b110 $
+1#
+#80
+0#
+#85
+b111 $
+1#
+#90
+0#
+#95
+b1000 $
+1#
+#100
+0#
+#105
+b1001 $
+1#
+#110
+0#
+#115
+b1010 $
+1#
+#120
+0#
+#125
+b1011 $
+1#
+#130
+0#
+#135
+b1100 $
+1#
+#140
+0#
+#145
+b1101 $
+1#
+#150
+0#
+#155
+b1110 $
+1#
+#160
+0#
+#165
+b1111 $
+1#
+#170
+0#
+#175
+b10000 $
+1#
+1(
+#180
+0#
+#185
+b10001 $
+1#
+#190
+0#
+#195
+b10010 $
+1#
+#200
+0#
+#205
+b10011 $
+1#
+#210
+0#
+#215
+b10100 $
+1#
+#220
+0#
+#225
+b10101 $
+1#
+#230
+0#
+#235
+b10110 $
+1#
+#240
+0#
+#245
+b10111 $
+1#
+#250
+0#
+#255
+b11000 $
+1#
+#260
+0#
+#265
+b11001 $
+1#
+#270
+0#
+#275
+b11010 $
+1#
+#280
+0#
+#285
+b11011 $
+1#
+#290
+0#
+#295
+b11100 $
+1#
+#300
+0#
+#305
+b11101 $
+1#
+#310
+0#
+#315
+b11110 $
+1#
+#320
+0#
+#325
+b11111 $
+1#
+#330
+0#
+#335
+b100000 $
+1#
+#340
+0#
+#345
+b100001 $
+1#
+#350
+0#
+#355
+b100010 $
+1#
+#360
+0#
+#365
+b100011 $
+1#
+#370
+0#
+#375
+b100100 $
+1#
+#380
+0#
+#385
+b100101 $
+1#
+#390
+0#
+#395
+b100110 $
+1#
+#400
+0#
+#405
+b100111 $
+1#
+#410
+0#
+#415
+b101000 $
+1#
+#420
+0#
+#425
+b101001 $
+1#
+#430
+0#
+#435
+b101010 $
+1#
+#440
+0#
+#445
+b101011 $
+1#
+#450
+0#
+#455
+b101100 $
+1#
+#460
+0#
+#465
+b101101 $
+1#
+#470
+0#
+#475
+b101110 $
+1#
+#480
+0#
+#485
+b101111 $
+1#
